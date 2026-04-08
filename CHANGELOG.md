@@ -4,6 +4,13 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
+
+## [Unreleased]
+
+### Changed
+
+- Renamed repository from `agent-control-files` to `gh-copilot-customizations` and updated all references across documentation (`README.md`, `CONTRIBUTING.md`, `SECURITY.md`, `src/.github/README.md`) and the release workflow (`.github/workflows/release.yml`)
+
 ## [v26.408.559] - 2026-04-08
 
 ### Changed
