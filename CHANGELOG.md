@@ -4,6 +4,12 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
+## [Unreleased]
+
+### Changed
+
+- Added extra line to the end of the file to trigger changelog validation in the release workflow. The workflow blocks if the `[Unreleased]` section is empty, so this ensures the changelog is always updated with new entries before a release.
+
 ## [v26.408.548] - 2026-04-08
 
 ### Changed
