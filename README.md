@@ -96,17 +96,16 @@ Releases are triggered manually via `workflow_dispatch` on any branch. The versi
 
 **Production** (from `main`):
 ```
-v26.407.0    ← vYY.MDD.N where N auto-increments for same-day releases
-v26.407.1    ← second release on the same day
+v26.408.1430                  ← vYY.MDD.HHMM
 ```
 
 **Pre-release** (from any other branch):
 ```
-v26.407.901-staging           ← vYY.MDD.HHMM-branch
+v26.408.901-staging           ← vYY.MDD.HHMM-branch
 v26.1231.2207-feature-new     ← branch name sanitized for semver
 ```
 
-Version format: `YY.MDD.HHMM` — month and hour have no leading zero; day and minute always have a leading zero.
+Version format: `YY.MDD.HHMM` — month and hour have no leading zero; day and minute always have a leading zero. The only difference between production and pre-release is the `-branch` suffix.
 
 The workflow has two jobs:
 
@@ -149,10 +148,10 @@ Consumers download a release and extract the `.github/` folder into their repo r
 
 ```bash
 # Download and extract the latest release
-tar -xzf agent-control-files-v26.407.0.tar.gz
+tar -xzf agent-control-files-v26.408.1430.tar.gz
 
 # Or unzip
-unzip agent-control-files-v26.407.0.zip
+unzip agent-control-files-v26.408.1430.zip
 ```
 
 Then run `/detect-stack` in Copilot chat to generate technology-specific standards. See the [consumer README](src/.github/README.md) for full details.
