@@ -20,3 +20,12 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 - Build script with version injection into consumer README
 - Validation script enforcing frontmatter, minimum content, required fields, cross-link integrity, and pair count
 - `/update-changelog` maintainer prompt for generating changelog entries from git history
+- `CODE_OF_CONDUCT.md` based on Contributor Covenant
+- `CONTRIBUTING.md` with contribution guidelines for the project
+- `SECURITY.md` with vulnerability reporting policy
+- `STYLE_GUIDE.md` with writing conventions for control files
+- `LICENSE` (MIT)
+
+### Changed
+
+- Simplified release workflow versioning to use HHMM timestamp for both production and pre-release tags (replaced auto-incrementing sequence number for production)
