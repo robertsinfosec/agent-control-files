@@ -15,7 +15,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 - Workspace governance via `copilot-instructions.md`
 - Generation factory with 33 SME braindump files and `/create-*` commands for quarterly regeneration
 - Consumer README with quick start guide, included file tables, and configuration instructions
-- Auto-versioned release workflow with date-stamp versions (`vYY.MDD.N` production, `vYY.MDD.HHMM-branch` pre-release)
+- Auto-versioned release workflow with date-stamp versions (`vYY.MDD.HHMM` production, `vYY.MDD.HHMM-branch` pre-release)
 - PR validation gate (runs `validate.sh` and changelog check on PRs to `main`)
 - Build script with version injection into consumer README
 - Validation script enforcing frontmatter, minimum content, required fields, cross-link integrity, and pair count
