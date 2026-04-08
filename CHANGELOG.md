@@ -8,9 +8,21 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ### Changed
 
+- Release workflow no longer pushes directly to staging; instead commits the stamped changelog to `main` and opens a sync PR back to the source branch via `gh`
+- Workflow no longer hardcodes `staging` — automatically detects the source branch from the merged PR
+- `/update-changelog` prompt and README updated to describe the sync PR approach
+
+### Added
+
+- `pull-requests: write` permission in release workflow for automated sync PRs
+
+## [v26.408.509] - 2026-04-08
+
+### Changed
+
 - Simplified release workflow versioning to use HHMM timestamp for both production and pre-release tags (replaced auto-incrementing sequence number for production)
-- Fixed changelog archive script to preserve content under version heading
-- Release workflow now archives changelog to `staging` branch instead of committing to `main`
+- Changelog now follows a state machine: production releases stamp `[Unreleased]` with the version number and push the result to both `main` and `staging`; `/update-changelog` creates the `[Unreleased]` section for the next cycle
+- `/update-changelog` prompt rewritten to understand the state machine lifecycle
 
 ### Added
 
